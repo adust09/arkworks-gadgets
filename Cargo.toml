@@ -1,0 +1,18 @@
+[package]
+name = "arkworks-gadgets"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+openssl = "0.10.55"
+rand = "0.8.5"
+
+# Arkworks family;
+ark-bn254 = "^0.5.0"
+ark-ff = "^0.5.0"
+ark-r1cs-std = "^0.5.0"
+ark-relations =  "^0.5.0"
+ark-bls12-381 = "^0.5.0"
+ark-crypto-primitives = { version = "^0.5.0", features = ["sponge", "crh", "r1cs"] }
+ark-grumpkin="^0.5.0"
+blake3 = "1.5.5"
