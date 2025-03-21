@@ -2,6 +2,25 @@
 name = "arkworks-gadgets"
 version = "0.1.0"
 edition = "2021"
+description = "Cryptographic gadgets for use with the Arkworks zero-knowledge proof library"
+authors = ["Contributors"]
+license = "MIT OR Apache-2.0"
+
+# The library will automatically use src/lib.rs
+[lib]
+name = "arkworks_gadgets"
+
+# The binary will use src/main.rs
+[[bin]]
+name = "arkworks-gadgets"
+
+[[example]]
+name = "blake3_example"
+path = "examples/blake3_example.rs"
+
+[[example]]
+name = "aes_example"
+path = "examples/aes_example.rs"
 
 [dependencies]
 openssl = "0.10.55"
